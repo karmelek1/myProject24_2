@@ -43,7 +43,7 @@ public class firstProject24 implements firstProject24Interface{
 
         Integer[] b={33,66};
         List<Integer> four=Arrays.asList(b);
-///////////////////////////////////////////
+////////////////////////////////////////////
         four.replaceAll();
 
 
