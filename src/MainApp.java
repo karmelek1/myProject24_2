@@ -20,7 +20,7 @@ public class MainApp {
       obj.getMessage();
 
       HelloWorld2 obj3=(HelloWorld2) context.getBean("helloWorld");
-      //obj2.setMessage("test_10");
+      //obj2.setMessage("from Acer");
       obj3.getMessage();
       obj.getMessage();
    }
