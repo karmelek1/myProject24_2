@@ -1,14 +1,22 @@
 import org.springframework.beans.factory.aspectj.ConfigurableObject;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
 public class MainApp {
    public static void main(String[] args) {
+
       ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
-      ApplicationContext context1=new ClassPathXmlApplicationContext("Beans.xml");
+      ApplicationContext context1=new ClassPathXmlApplicationContext("Beans1.xml");
+       AbstractApplicationContext context2=new ClassPathXmlApplicationContext();
+       context2.registerShutdownHook();
+       context2.getCo
+
       //do pull from github to temp branch and merge with main , should only add changes from github
 //can I add method to implementingi interface class and call it with interface object?
+
+
       HelloWorld2 obj = (HelloWorld2) context.getBean("helloWorld");
      obj.setMessage("test12345_3");
       obj.getMessage();
@@ -21,7 +29,7 @@ public class MainApp {
 
       HelloWorld2 obj3=(HelloWorld2) context.getBean("helloWorld");
       //obj2.setMessage("from HP");
-      obj3.getMessage();
-      obj.getMessage();
+      //obj3.getMessage();
+      //obj.getMessage();
    }
 }
